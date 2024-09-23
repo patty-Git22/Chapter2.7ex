@@ -20,15 +20,16 @@ using namespace std;
 
 int main()
 {
-	double oceanlevel = 1.5;
+	double oceanlevel;
+	cout << "How many millimeters does the ocean rise per year? ";
+	cin >> oceanlevel;
 	double num1, num2, num3;
-	num1 = 1.5 * 5;
-	num2 = 1.5 * 7;
-	num3 = 1.5 * 10;
-	cout << "The ocean's level current level is " << oceanlevel << "mL" << endl;
-	cout << "The ocean's' level will be " << num1 << "mL in 5 years" << endl;
-	cout << "The ocean's level will be " << num2 << "mL in 7 years" << endl;
-	cout << "The ocean's level will be " << num3 << "mL in 10 years" << endl;
+	num1 = oceanlevel * 5;
+	num2 = oceanlevel * 7;
+	num3 = oceanlevel * 10;
+	cout << "The ocean's' level will be " << num1 << "mL higher in 5 years" << endl;
+	cout << "The ocean's level will be " << num2 << "mL higher in 7 years" << endl;
+	cout << "The ocean's level will be " << num3 << "mL higher in 10 years" << endl;
 
 	return 0;
 
